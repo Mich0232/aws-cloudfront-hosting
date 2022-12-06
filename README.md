@@ -32,6 +32,8 @@ You will need to provide the domain along with ACM certificate.
 
 `cached_methods` - Cached HTTP methods. (default: GET; HEAD)
 
+`tags` - Tags passed to the resources.
+
 
 ### Output variables:
 

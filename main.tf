@@ -16,6 +16,7 @@ resource "aws_cloudfront_distribution" "hosting" {
   is_ipv6_enabled     = true
 
   aliases = [var.domain]
+  tags    = local.resourceTags
 
   origin {
     domain_name = aws_s3_bucket.hosting.bucket_regional_domain_name

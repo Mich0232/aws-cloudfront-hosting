@@ -1,6 +1,7 @@
 resource "aws_s3_bucket" "hosting" {
   bucket        = "${var.project_name}-service-hosting"
   force_destroy = true
+  tags          = local.resourceTags
 }
 
 resource "aws_s3_bucket_policy" "hosting" {
